@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0104BEA7287B0AF300AD11F7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0104BEA6287B0AF300AD11F7 /* Launch Screen.storyboard */; };
 		01BD84E2287976B400BFECB0 /* LeaguesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BD84E1287976B400BFECB0 /* LeaguesApp.swift */; };
-		01BD84E4287976B400BFECB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BD84E3287976B400BFECB0 /* ContentView.swift */; };
+		01BD84E4287976B400BFECB0 /* LeaguesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BD84E3287976B400BFECB0 /* LeaguesView.swift */; };
 		01BD84E6287976B600BFECB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01BD84E5287976B600BFECB0 /* Assets.xcassets */; };
 		01BD84E9287976B600BFECB0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01BD84E8287976B600BFECB0 /* Preview Assets.xcassets */; };
+		01BD84F02879A89D00BFECB0 /* Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BD84EF2879A89D00BFECB0 /* Remote.swift */; };
+		01BD84F22879A8EF00BFECB0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BD84F12879A8EF00BFECB0 /* Model.swift */; };
+		01BD84F42879B22100BFECB0 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BD84F32879B22100BFECB0 /* LogoView.swift */; };
+		01BD84F62879D14900BFECB0 /* SeasonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BD84F52879D14900BFECB0 /* SeasonsView.swift */; };
+		01BD84F82879D18900BFECB0 /* StandingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BD84F72879D18800BFECB0 /* StandingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0104BEA6287B0AF300AD11F7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		01BD84DE287976B400BFECB0 /* Leagues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leagues.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01BD84E1287976B400BFECB0 /* LeaguesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesApp.swift; sourceTree = "<group>"; };
-		01BD84E3287976B400BFECB0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		01BD84E3287976B400BFECB0 /* LeaguesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesView.swift; sourceTree = "<group>"; };
 		01BD84E5287976B600BFECB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01BD84E8287976B600BFECB0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		01BD84EF2879A89D00BFECB0 /* Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remote.swift; sourceTree = "<group>"; };
+		01BD84F12879A8EF00BFECB0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		01BD84F32879B22100BFECB0 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		01BD84F52879D14900BFECB0 /* SeasonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsView.swift; sourceTree = "<group>"; };
+		01BD84F72879D18800BFECB0 /* StandingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +63,11 @@
 		01BD84E0287976B400BFECB0 /* Leagues */ = {
 			isa = PBXGroup;
 			children = (
-				01BD84E1287976B400BFECB0 /* LeaguesApp.swift */,
-				01BD84E3287976B400BFECB0 /* ContentView.swift */,
-				01BD84E5287976B600BFECB0 /* Assets.xcassets */,
+				01BD85002879D2B700BFECB0 /* Network */,
+				01BD84FF2879D29200BFECB0 /* Models */,
+				01BD84FD2879D25800BFECB0 /* Views */,
+				01BD84F92879D19800BFECB0 /* Screens */,
+				01BD84FE2879D27600BFECB0 /* App */,
 				01BD84E7287976B600BFECB0 /* Preview Content */,
 			);
 			path = Leagues;
@@ -65,6 +79,74 @@
 				01BD84E8287976B600BFECB0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		01BD84F92879D19800BFECB0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				01BD84FA2879D1A700BFECB0 /* Leagues */,
+				01BD84FB2879D1C000BFECB0 /* Seasons */,
+				01BD84FC2879D1CB00BFECB0 /* Standings */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		01BD84FA2879D1A700BFECB0 /* Leagues */ = {
+			isa = PBXGroup;
+			children = (
+				01BD84E3287976B400BFECB0 /* LeaguesView.swift */,
+			);
+			path = Leagues;
+			sourceTree = "<group>";
+		};
+		01BD84FB2879D1C000BFECB0 /* Seasons */ = {
+			isa = PBXGroup;
+			children = (
+				01BD84F52879D14900BFECB0 /* SeasonsView.swift */,
+			);
+			path = Seasons;
+			sourceTree = "<group>";
+		};
+		01BD84FC2879D1CB00BFECB0 /* Standings */ = {
+			isa = PBXGroup;
+			children = (
+				01BD84F72879D18800BFECB0 /* StandingsView.swift */,
+			);
+			path = Standings;
+			sourceTree = "<group>";
+		};
+		01BD84FD2879D25800BFECB0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				01BD84F32879B22100BFECB0 /* LogoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		01BD84FE2879D27600BFECB0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				01BD84E1287976B400BFECB0 /* LeaguesApp.swift */,
+				01BD84E5287976B600BFECB0 /* Assets.xcassets */,
+				0104BEA6287B0AF300AD11F7 /* Launch Screen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		01BD84FF2879D29200BFECB0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				01BD84F12879A8EF00BFECB0 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		01BD85002879D2B700BFECB0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				01BD84EF2879A89D00BFECB0 /* Remote.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0104BEA7287B0AF300AD11F7 /* Launch Screen.storyboard in Resources */,
 				01BD84E9287976B600BFECB0 /* Preview Assets.xcassets in Resources */,
 				01BD84E6287976B600BFECB0 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +220,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01BD84E4287976B400BFECB0 /* ContentView.swift in Sources */,
+				01BD84F42879B22100BFECB0 /* LogoView.swift in Sources */,
+				01BD84F82879D18900BFECB0 /* StandingsView.swift in Sources */,
+				01BD84E4287976B400BFECB0 /* LeaguesView.swift in Sources */,
 				01BD84E2287976B400BFECB0 /* LeaguesApp.swift in Sources */,
+				01BD84F62879D14900BFECB0 /* SeasonsView.swift in Sources */,
+				01BD84F02879A89D00BFECB0 /* Remote.swift in Sources */,
+				01BD84F22879A8EF00BFECB0 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +372,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,7 +401,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
